@@ -1,0 +1,3 @@
+ExpiresActive On
+ExpiresDefault "access plus 1 day"
+Header append Cache-Control "public"

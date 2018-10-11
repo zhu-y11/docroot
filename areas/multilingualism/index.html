@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Language Technology Lab @ University of Cambridge</title>
+    <meta name="description" content="Language Technology Lab @ University of Cambridge" />
+    <meta name='author' content='Jeroen Geertzen' />
+
+    <link rel="stylesheet" href="../../css/main.min.css" media="all">
+    <link rel="stylesheet" href="../../css/normalize.min.css" media="all">
+    <link rel="stylesheet" href="../../css/styles.min.css" media="all">
+    <link rel="stylesheet" href="../../css/print.min.css" type="text/css" media="print" />
+
+    <script src="../../js/ltl.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div id="header-container">
+
+            <a href="./../../" title="Go to homepage">
+                <img id="logo" src="../../img/ltl_logo2.png">
+            </a>
+
+            <nav>
+                <ul>
+                    <li class="first"><a class="" href="./../../">Home</a></li>
+                    <li class=""><a class="" href="./../../people">People</a></li>
+                    <li class=""><a class="" href="./../../projects">Projects</a></li>
+                    <li class=""><a class="" href="./../seminars">Seminars</a></li>
+                    <li class=""><a class="" href="./../../publications">Publications</a></li>
+                    <li class=""><a class="" href="./../../resources">Resources</a></li>
+                    <li class=""><a class="" href="./../../opportunities">Opportunities</a></li>
+                    <li class=""><a class="" href="./../../about">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="clear"></div>
+        </div>
+    </header>
+
+    <div id="wrapper">
+
+        <div id="content">
+
+            <div id="skipanchor">
+                <div class="two-col-left">
+                    <div class="heading red">
+                        <p id="hdr_Area"></p>
+                    </div>
+                    <div id="txt_Area"></div>
+                    <div id="ack_Area" class="ack"></div>
+                    <div id="url_Area" class="more"></div>
+                    <div id="publist"></div>
+
+                </div>
+
+                <div class="two-col-right newsbox">
+
+                    <div class="heading green">
+                        <p>News</p>
+                    </div>
+
+                    <div class="items" id="newsitems"></div>
+
+                    <br/>
+                    <br/>
+
+                    <div class="heading green">
+                        <p>Upcoming talks</p>
+                    </div>
+
+                    <div class="items" id="talkitems"></div>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <footer>
+<img id="ucam" src="../../img/logo.png" class="right" />
+            <p>Language Technology Lab (LTL)
+                <br />Dept. of Theoretical &amp; Applied Linguistics
+                <br />University of Cambridge
+                <br />English Faculty Building, 9 West Road
+                <br />Cambridge CB3 9DA, United Kingdom
+                <br/>
+                <br>Tel: +44 (0)1223 335010
+                <br>
+            </p>
+        </footer>
+
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            populate_area(3);
+            populate_news();
+            populate_talks();
+            //populate_publications('multilingualism');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Language Technology Lab @ University of Cambridge</title>
+    <meta name="description" content="Language Technology Lab @ University of Cambridge" />
+<meta name='author' content='Jeroen Geertzen' />
+
+    <link rel="stylesheet" href="css/main.min.css" media="all">
+    <link rel="stylesheet" href="css/normalize.min.css" media="all">
+    <link rel="stylesheet" href="css/styles.min.css" media="all">
+    <link rel="stylesheet" href="css/print.min.css" type="text/css" media="print" />
+
+    <script src="js/ltl.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div id="header-container">
+
+            <a href="./" title="Go to homepage">
+                <img id="logo" src="img/ltl_logo2.png">
+            </a>
+
+            <nav>
+                <ul>
+                    <li class="first"><a class=" active" href="/">Home</a></li>
+                    <li class=""><a class="" href="people">People</a></li>
+                    <li class=""><a class="" href="projects">Projects</a></li>
+                    <li class=""><a class="" href="seminars">Seminars</a></li>
+                    <li class=""><a class="" href="publications">Publications</a></li>
+                    <li class=""><a class="" href="resources">Resources</a></li>
+                    <!--<li class=""><a class="" href="opportunities">Opportunities</a></li>-->
+                    <li class=""><a class="" href="about">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="clear"></div>
+        </div>
+    </header>
+
+    <div id="wrapper">
+
+        <div id="content">
+
+            <div id="banner-container">
+                <!--<img src="img/photosel03.jpg">-->
+                <img src="img/ltl_people_garden2.jpg" width="100%" height="100%" alt="Members" class="item-img">
+                <!--<div id="banner-text">-->
+                <!--<div id="photo-credit">-->
+                    <p id="photo-credit">Welcome to the <span class="grn"> Language Technology Lab (LTL)</span> at
+                        the University of Cambridge.</p>
+                <!--</div>-->
+                <!--<p id="photo-credit">Photo by , courtesy of the Soap Factory</p>-->
+            </div>
+            <div id="skipanchor">
+                <div class="three-col">
+                    <div class="heading red">
+                        <p id="hdr_AreasIntro"></p>
+                    </div>
+                    <p id="itm_AreasIntro" class="themes-tabs-header"></p>
+                    <div class="theme-tabs">
+                        <a href="areas/fundamentals/">
+                            <img src="img/fundamental.png" height="96" width="150">
+                            <span class="right"><em id="hdr_Area1">NLP fundamentals</em></span>
+                        </a>
+                        <a href="areas/health/">
+                            <img src="img/health.png" height="96" width="150">
+                            <span class="right"><em id="hdr_Area2">NLP for health</em></span>
+                        </a>
+                        <a href="areas/multilingualism/">
+                            <img src="img/multiling.png" height="96" width="150">
+                            <span class="right"><em id="hdr_Area3">NLP for multilingualism</em></span>
+                        </a>
+                        <a href="areas/education/">
+                            <img src="img/education.png" height="96" width="150">
+                            <span class="right"><em id="hdr_Area4">NLP for education</em></span>
+                        </a>
+                        <a href="areas/humanities/">
+                            <img src="img/humanities.jpg" height="96" width="150">
+                            <span class="right"><em id="hdr_Area5">NLP for digital humanities</em></span>
+                        </a>
+                        <a href="areas/linguistics/">
+                            <img src="img/linguistics.jpg" height="96" width="150">
+                            <span class="right"><em id="hdr_Area6">NLP for quantitative linguistics</em></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="three-col middle">
+                
+                    <div class="heading yellow item-heading">
+                        <p>People</p>
+                    </div>
+                    <a href="people">
+                       <!-- <img src="img/composite_small.jpg" width="300" alt="Members" class="item-img">-->
+                       <img src="img/ltl_garden_high.jpg" width="300" alt="Members" class="item-img">
+                    </a>
+
+                    <div class="heading darkgrey item-heading">
+                        <p>Publications</p>
+                    </div>
+                    <a href="publications">
+                        <img src="img/queens.png" width="300" alt="Publications" class="item-img">
+                    </a>
+                    
+                    <a class="twitter-timeline" data-theme="light" href="https://twitter.com/CambridgeLTL?ref_src=twsrc%5Etfw" height="425">
+                    Tweets by CambridgeLTL</a> 
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+                    </script>
+
+                </div>
+
+                <div class="two-col-right newsbox">
+
+                    <div class="heading green">
+                        <p>News</p>
+                    </div>
+
+                    <div class="items" id="newsitems"></div>
+
+                    <br/>
+                    <br/>
+
+                    <div class="heading green">
+                        <p>Upcoming talks</p>
+                    </div>
+
+                    <div class="items" id="talkitems"></div>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <footer>
+            <img id="ucam" src="img/logo.png" class="right" />
+            <p>Language Technology Lab (LTL)
+                <br />Dept. of Theoretical &amp; Applied Linguistics
+                <br />University of Cambridge
+                <br />English Faculty Building, 9 West Road
+                <br />Cambridge CB3 9DA, United Kingdom
+                <br/>
+                <br>Tel: +44 (0)1223 335010
+                <br>
+            </p>
+            <div id="creator">Created by <a href="https://mlnl.net/jg/" target="_new">Jeroen Geertzen</a></div>
+        </footer>
+
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            populate_news();
+            populate_talks();
+            populate_areasintro();
+        });
+    </script>
+</body>
+
+</html>
