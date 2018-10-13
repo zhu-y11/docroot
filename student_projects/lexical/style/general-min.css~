@@ -1,0 +1,19 @@
+img#ucam {
+    margin-bottom: 60px;
+    margin-right: 20px;
+}
+
+img#ltl_logo {
+    margin-bottom: 40px;
+    margin-right: 780px;
+}
+
+img#erc {
+    margin-bottom: 5px;
+    margin-right: 480px;
+}
+
+img {
+    vertical-align: middle;
+}
+
