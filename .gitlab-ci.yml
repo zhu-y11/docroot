@@ -10,6 +10,6 @@ deploy:
     - echo "$SSH_TARGET_PRIVKEY" | tr -d '\r' | ssh-add -
     - 'mkdir -p "${HOME}/.ssh"'
     - 'echo "StrictHostKeyChecking no" >> "${HOME}/.ssh/config"'
-    - 'rsync -avz -e "ssh -p ${SSH_TARGET_PORT}" --delete "${CI_PROJECT_DIR}/" "sahisuser@${SSH_TARGET_HOST}:/var/www/html"'
+    - 'rsync -avz -e "ssh -p ${SSH_TARGET_PORT}" --exclude ".htaccess" --delete "${CI_PROJECT_DIR}/" "sahisuser@${SSH_TARGET_HOST}:/var/www/html"'
   only:
     - master
