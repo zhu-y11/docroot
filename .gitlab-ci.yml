@@ -1,0 +1,15 @@
+image: 'ubuntu:bionic'
+stages:
+  - deploy
+deploy:
+  stage: deploy
+  script:
+    - apt-get -qq update
+    - apt-get -y install openssh-client rsync
+    - eval $(ssh-agent)
+    - echo "$SSH_TARGET_PRIVKEY" | tr -d '\r' | ssh-add -
+    - 'mkdir -p "${HOME}/.ssh"'
+    - 'echo "StrictHostKeyChecking no" >> "${HOME}/.ssh/config"'
+    - 'rsync -avz -e "ssh -p ${SSH_TARGET_PORT}" --delete "${CI_PROJECT_DIR}/" "sahisuser@${SSH_TARGET_HOST}:/var/www/html"'
+  only:
+    - master
